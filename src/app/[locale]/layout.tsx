@@ -8,6 +8,7 @@ import { DynamicBackground } from '@/components/animations/DynamicBackground'
 import { ChristmasBackground } from '@/components/animations/ChristmasBackground'
 import { SuppressWarnings } from '@/components/SuppressWarnings'
 import { SetHtmlLang } from '@/components/layout/SetHtmlLang'
+import { FontLoader } from '@/components/layout/FontLoader'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -43,6 +44,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={messages}>
       <SetHtmlLang />
       <SuppressWarnings />
+      <FontLoader />
       {showChristmas ? <ChristmasBackground /> : <DynamicBackground />}
       <Navigation />
       <main className="min-h-screen relative z-10">

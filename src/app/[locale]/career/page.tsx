@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer } from '@/lib/animations'
 import { Link } from '@/i18n/routing'
+import { SectionImage } from '@/components/ui/SectionImage'
 
 export default function CareerPage() {
   const t = useTranslations('career')
@@ -16,7 +17,6 @@ export default function CareerPage() {
       descriptionKey: 'portfolioDescription',
       path: '/career/portfolio',
       gradient: 'from-deep-sea-blue-100 to-accent-gold',
-      icon: '📋',
     },
     {
       id: 'education',
@@ -24,7 +24,6 @@ export default function CareerPage() {
       descriptionKey: 'educationDescription',
       path: '/career/education',
       gradient: 'from-deep-sea-blue-100 to-accent-teal',
-      icon: '🎓',
     },
     {
       id: 'work',
@@ -32,7 +31,6 @@ export default function CareerPage() {
       descriptionKey: 'workDescription',
       path: '/career/work',
       gradient: 'from-deep-sea-blue-100 to-accent-purple',
-      icon: '💼',
     },
     {
       id: 'projects',
@@ -40,7 +38,6 @@ export default function CareerPage() {
       descriptionKey: 'projectsDescription',
       path: '/career/projects',
       gradient: 'from-deep-sea-blue-100 to-accent-orange',
-      icon: '🚀',
     },
   ]
 
@@ -72,7 +69,7 @@ export default function CareerPage() {
               <Link href={section.path}>
                 <div className="bg-white/90 dark:bg-deep-sea-blue-900/90 backdrop-blur-md rounded-xl p-6 shadow-2xl hover:shadow-deep-sea-blue-500/50 transition-all cursor-pointer border border-deep-sea-blue-300/30 dark:border-deep-sea-blue-600/30 hover:border-accent-teal/50 h-full">
                   <div className="flex items-start gap-4">
-                    <span className="text-4xl">{section.icon}</span>
+                    <SectionImage sectionId={section.id} size={64} className="flex-shrink-0" />
                     <div className="flex-1">
                       <h2 className={`text-3xl font-semibold mb-3 bg-gradient-to-r ${section.gradient} bg-clip-text text-transparent font-heading`}>
                         {t(section.titleKey)}

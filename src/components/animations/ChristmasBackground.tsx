@@ -151,29 +151,6 @@ export function ChristmasBackground() {
           </svg>
         </div>
 
-        {/* Left side decorative ornaments */}
-        <div className="absolute left-0 top-1/4 bottom-1/4 w-16">
-          <div className="h-full flex flex-col justify-around items-center">
-            {[...Array(3)].map((_, i) => (
-              <div key={`left-ornament-${i}`} className="relative">
-                <div className="w-8 h-8 rounded-full border-2 border-yellow-300/60 bg-gradient-to-br from-yellow-200/40 to-yellow-400/40 shadow-lg" />
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-yellow-300 rounded-full" />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Right side decorative ornaments */}
-        <div className="absolute right-0 top-1/4 bottom-1/4 w-16">
-          <div className="h-full flex flex-col justify-around items-center">
-            {[...Array(3)].map((_, i) => (
-              <div key={`right-ornament-${i}`} className="relative">
-                <div className="w-8 h-8 rounded-full border-2 border-red-300/60 bg-gradient-to-br from-red-200/40 to-red-400/40 shadow-lg" />
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-red-300 rounded-full" />
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Subtle Christmas tree silhouettes in corners */}
         <div className="absolute top-20 left-10 w-32 h-40 opacity-20">

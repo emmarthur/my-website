@@ -103,6 +103,25 @@ export default function SettingsPage() {
               </div>
             </motion.div>
           </Link>
+
+          {/* Font Selection Option */}
+          <Link href="/settings/fonts">
+            <motion.div
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-deep-sea-blue-400/30 hover:border-accent-teal/50 transition-all cursor-pointer"
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold mb-2 text-deep-sea-blue-50 font-heading">{t('fonts.title')}</h2>
+                  <p className="text-deep-sea-blue-200 mb-2">{t('fonts.description')}</p>
+                </div>
+                <svg className="w-6 h-6 text-deep-sea-blue-400 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </motion.div>
+          </Link>
         </div>
       </motion.div>
     </div>

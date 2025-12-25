@@ -11,7 +11,7 @@ const navItems = [
   { key: 'home', path: '/' },
   { key: 'career', path: '/career' },
   { key: 'hobbies', path: '/hobbies' },
-  { key: 'relationships', path: '/relationships' },
+  { key: 'health', path: '/health' },
   { key: 'thoughts', path: '/thoughts' },
   { key: 'media', path: '/media' },
   { key: 'settings', path: '/settings' },
