@@ -141,6 +141,12 @@ export const metadata: Metadata = {
   description: 'A portfolio and digital diary documenting life, career, hobbies, and thoughts',
 }
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
+
 // Root layout - provides html/body structure
 // The [locale]/layout.tsx provides i18n context
 export default function RootLayout({

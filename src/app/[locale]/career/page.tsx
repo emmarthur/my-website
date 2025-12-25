@@ -42,22 +42,22 @@ export default function CareerPage() {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-20">
       <motion.div
         initial="initial"
         animate="animate"
         variants={staggerContainer}
       >
         <motion.div variants={fadeInUp}>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-deep-sea-blue-100 to-accent-teal bg-clip-text text-transparent font-heading">{t('title')}</h1>
-          <p className="text-xl text-deep-sea-blue-50 mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-deep-sea-blue-100 to-accent-teal bg-clip-text text-transparent font-heading">{t('title')}</h1>
+          <p className="text-base sm:text-lg md:text-xl text-deep-sea-blue-50 mb-8 sm:mb-12">
             {t('description')}
           </p>
         </motion.div>
 
         <motion.div
           variants={staggerContainer}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8"
         >
           {careerSections.map((section) => (
             <motion.div
@@ -67,17 +67,17 @@ export default function CareerPage() {
               whileTap={{ scale: 0.98 }}
             >
               <Link href={section.path}>
-                <div className="bg-white/90 dark:bg-deep-sea-blue-900/90 backdrop-blur-md rounded-xl p-6 shadow-2xl hover:shadow-deep-sea-blue-500/50 transition-all cursor-pointer border border-deep-sea-blue-300/30 dark:border-deep-sea-blue-600/30 hover:border-accent-teal/50 h-full">
-                  <div className="flex items-start gap-4">
-                    <SectionImage sectionId={section.id} size={64} className="flex-shrink-0" />
-                    <div className="flex-1">
-                      <h2 className={`text-3xl font-semibold mb-3 bg-gradient-to-r ${section.gradient} bg-clip-text text-transparent font-heading`}>
+                <div className="bg-white/90 dark:bg-deep-sea-blue-900/90 backdrop-blur-md rounded-xl p-4 sm:p-6 shadow-2xl hover:shadow-deep-sea-blue-500/50 transition-all cursor-pointer border border-deep-sea-blue-300/30 dark:border-deep-sea-blue-600/30 hover:border-accent-teal/50 h-full">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <SectionImage sectionId={section.id} size={48} className="sm:w-16 sm:h-16 flex-shrink-0" />
+                    <div className="flex-1 min-w-0">
+                      <h2 className={`text-xl sm:text-2xl md:text-3xl font-semibold mb-2 sm:mb-3 bg-gradient-to-r ${section.gradient} bg-clip-text text-transparent font-heading break-words`}>
                         {t(section.titleKey)}
                       </h2>
-                      <p className="text-deep-sea-blue-700 dark:text-deep-sea-blue-200">
+                      <p className="text-sm sm:text-base text-deep-sea-blue-700 dark:text-deep-sea-blue-200 break-words">
                         {t(section.descriptionKey)}
                       </p>
-                      <div className="mt-4 flex items-center text-accent-teal text-sm font-medium">
+                      <div className="mt-3 sm:mt-4 flex items-center text-accent-teal text-xs sm:text-sm font-medium">
                         {tCommon('explore')} →
                       </div>
                     </div>

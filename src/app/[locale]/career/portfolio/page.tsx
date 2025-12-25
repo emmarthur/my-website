@@ -25,7 +25,7 @@ export default function PortfolioPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-20">
       <motion.div
         initial="initial"
         animate="animate"
@@ -40,10 +40,10 @@ export default function PortfolioPage() {
         
         {/* Header */}
         <motion.div variants={fadeInUp} className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-deep-sea-blue-100 via-accent-teal to-accent-gold bg-clip-text text-transparent font-heading">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-deep-sea-blue-100 via-accent-teal to-accent-gold bg-clip-text text-transparent font-heading">
             EMMANUEL ARTHUR
           </h1>
-          <div className="flex flex-wrap gap-4 text-deep-sea-blue-200 mb-6 items-center">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 text-sm sm:text-base text-deep-sea-blue-200 mb-4 sm:mb-6 items-start sm:items-center">
             <a href="mailto:emmakarthur1800@gmail.com" className="hover:text-accent-teal transition-colors flex items-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -64,29 +64,29 @@ export default function PortfolioPage() {
               (503) 995-5621
             </span>
           </div>
-          <p className="text-xl text-deep-sea-blue-50 mb-6">
+          <p className="text-base sm:text-lg md:text-xl text-deep-sea-blue-50 mb-4 sm:mb-6">
             {t('portfolioDescription')}
           </p>
           {tPortfolio('professionalSummary') && (
-            <div className="bg-gradient-to-r from-deep-sea-blue-800/50 to-deep-sea-blue-900/50 rounded-lg p-6 border border-deep-sea-blue-600/30">
-              <h2 className="text-lg font-semibold text-accent-teal mb-3 font-heading">{tPortfolio('summary.title')}</h2>
-              <p className="text-deep-sea-blue-200 leading-relaxed">{tPortfolio('professionalSummary')}</p>
+            <div className="bg-gradient-to-r from-deep-sea-blue-800/50 to-deep-sea-blue-900/50 rounded-lg p-4 sm:p-6 border border-deep-sea-blue-600/30">
+              <h2 className="text-base sm:text-lg font-semibold text-accent-teal mb-2 sm:mb-3 font-heading">{tPortfolio('summary.title')}</h2>
+              <p className="text-sm sm:text-base text-deep-sea-blue-200 leading-relaxed">{tPortfolio('professionalSummary')}</p>
             </div>
           )}
         </motion.div>
 
         {/* Skills Section */}
         <motion.div variants={fadeInUp} className="mb-12">
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-deep-sea-blue-400/30">
-            <h2 className="text-3xl font-bold mb-6 text-deep-sea-blue-50 flex items-center font-heading">
-              <SectionImage sectionId="projects" size={40} className="mr-3 flex-shrink-0" />
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 md:p-8 border border-deep-sea-blue-400/30">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-deep-sea-blue-50 flex items-center font-heading">
+              <SectionImage sectionId="projects" size={32} className="sm:w-10 sm:h-10 mr-2 sm:mr-3 flex-shrink-0" />
               {tPortfolio('skills')}
             </h2>
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-accent-teal mb-3 font-heading">{tPortfolio('programmingLanguages')}</h3>
-                <div className="flex flex-wrap gap-3">
+                <h3 className="text-base sm:text-lg font-semibold text-accent-teal mb-2 sm:mb-3 font-heading">{tPortfolio('programmingLanguages')}</h3>
+                <div className="flex flex-wrap gap-2 sm:gap-3">
                   {skills.languages.map((skill, idx) => (
                     <motion.div
                       key={idx}
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: idx * 0.05 }}
                     >
-                      <SkillLogo skill={skill} size={skill === 'Java' ? 64 : 48} />
+                      <SkillLogo skill={skill} size={skill === 'Java' ? 48 : 40} className="sm:w-12 sm:h-12 md:w-16 md:h-16" />
                     </motion.div>
                   ))}
                 </div>
@@ -170,9 +170,9 @@ export default function PortfolioPage() {
 
         {/* Education Section */}
         <motion.div variants={fadeInUp} className="mb-12">
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-deep-sea-blue-400/30">
-            <h2 className="text-3xl font-bold mb-6 text-deep-sea-blue-50 flex items-center font-heading">
-              <SectionImage sectionId="education" size={40} className="mr-3 flex-shrink-0" />
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 md:p-8 border border-deep-sea-blue-400/30">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-deep-sea-blue-50 flex items-center font-heading">
+              <SectionImage sectionId="education" size={32} className="sm:w-10 sm:h-10 mr-2 sm:mr-3 flex-shrink-0" />
               {tPortfolio('education')}
             </h2>
             <div className="space-y-6">
@@ -183,25 +183,25 @@ export default function PortfolioPage() {
                 className="relative pl-8 border-l-4 border-accent-teal"
               >
                 <div className="absolute -left-2 top-0 w-4 h-4 bg-accent-teal rounded-full border-4 border-deep-sea-blue-900"></div>
-                <div className="bg-deep-sea-blue-800/50 rounded-lg p-6 border border-deep-sea-blue-600/30">
+                <div className="bg-deep-sea-blue-800/50 rounded-lg p-4 sm:p-6 border border-deep-sea-blue-600/30">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-2 sm:gap-3">
                       <div className="flex-shrink-0 mt-1">
                         <Image 
                           src="/logos/universities/portland-state.png" 
                           alt="Portland State University" 
-                          width={120} 
-                          height={120} 
-                          className="object-contain"
+                          width={80} 
+                          height={80} 
+                          className="sm:w-24 sm:h-24 md:w-30 md:h-30 object-contain"
                         />
                       </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-deep-sea-blue-50 font-heading">{tPortfolio('educationData.masters.degree')}</h3>
-                        <p className="text-lg text-accent-teal mb-1">{tPortfolio('educationData.masters.school')}</p>
-                        <p className="text-deep-sea-blue-300 mb-2">{tPortfolio('educationData.masters.location')}</p>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-deep-sea-blue-50 font-heading break-words">{tPortfolio('educationData.masters.degree')}</h3>
+                        <p className="text-sm sm:text-base md:text-lg text-accent-teal mb-1 break-words">{tPortfolio('educationData.masters.school')}</p>
+                        <p className="text-xs sm:text-sm text-deep-sea-blue-300 mb-2 break-words">{tPortfolio('educationData.masters.location')}</p>
                       </div>
                     </div>
-                    <span className="text-sm text-accent-teal font-medium mt-2 md:mt-0">{tPortfolio('educationData.masters.period')}</span>
+                    <span className="text-xs sm:text-sm text-accent-teal font-medium mt-2 md:mt-0">{tPortfolio('educationData.masters.period')}</span>
                   </div>
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-orange/20 text-accent-orange border border-accent-orange/30">
                     {tPortfolio('educationData.masters.status')}
@@ -215,25 +215,25 @@ export default function PortfolioPage() {
                 className="relative pl-8 border-l-4 border-accent-teal"
               >
                 <div className="absolute -left-2 top-0 w-4 h-4 bg-accent-teal rounded-full border-4 border-deep-sea-blue-900"></div>
-                <div className="bg-deep-sea-blue-800/50 rounded-lg p-6 border border-deep-sea-blue-600/30">
+                <div className="bg-deep-sea-blue-800/50 rounded-lg p-4 sm:p-6 border border-deep-sea-blue-600/30">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-2 sm:gap-3">
                       <div className="flex-shrink-0 mt-1">
                         <Image 
                           src="/logos/universities/reed-college.svg" 
                           alt="Reed College" 
-                          width={140} 
-                          height={40} 
-                          className="object-contain"
+                          width={100} 
+                          height={30} 
+                          className="sm:w-32 sm:h-10 md:w-36 md:h-10 object-contain"
                         />
                       </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-deep-sea-blue-50 font-heading">{tPortfolio('educationData.bachelors.degree')}</h3>
-                        <p className="text-lg text-accent-teal mb-1">{tPortfolio('educationData.bachelors.school')}</p>
-                        <p className="text-deep-sea-blue-300 mb-2">{tPortfolio('educationData.bachelors.location')}</p>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-deep-sea-blue-50 font-heading break-words">{tPortfolio('educationData.bachelors.degree')}</h3>
+                        <p className="text-sm sm:text-base md:text-lg text-accent-teal mb-1 break-words">{tPortfolio('educationData.bachelors.school')}</p>
+                        <p className="text-xs sm:text-sm text-deep-sea-blue-300 mb-2 break-words">{tPortfolio('educationData.bachelors.location')}</p>
                       </div>
                     </div>
-                    <span className="text-sm text-accent-teal font-medium mt-2 md:mt-0">{tPortfolio('educationData.bachelors.period')}</span>
+                    <span className="text-xs sm:text-sm text-accent-teal font-medium mt-2 md:mt-0">{tPortfolio('educationData.bachelors.period')}</span>
                   </div>
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent-teal/20 text-accent-teal border border-accent-teal/30">
                     {tPortfolio('educationData.bachelors.status')}
@@ -252,9 +252,9 @@ export default function PortfolioPage() {
 
         {/* Work Experience Section */}
         <motion.div variants={fadeInUp} className="mb-12">
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-deep-sea-blue-400/30">
-            <h2 className="text-3xl font-bold mb-6 text-deep-sea-blue-50 flex items-center font-heading">
-              <SectionImage sectionId="work" size={40} className="mr-3 flex-shrink-0" />
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 md:p-8 border border-deep-sea-blue-400/30">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-deep-sea-blue-50 flex items-center font-heading">
+              <SectionImage sectionId="work" size={32} className="sm:w-10 sm:h-10 mr-2 sm:mr-3 flex-shrink-0" />
               {tPortfolio('professionalExperience')}
             </h2>
             <div className="space-y-8">
@@ -263,35 +263,35 @@ export default function PortfolioPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="bg-deep-sea-blue-800/50 rounded-lg p-6 border border-deep-sea-blue-600/30"
+                className="bg-deep-sea-blue-800/50 rounded-lg p-4 sm:p-6 border border-deep-sea-blue-600/30"
               >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-3">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 sm:mb-4">
+                  <div className="flex items-start gap-2 sm:gap-3">
                     <div className="flex-shrink-0 mt-1">
                       <Image 
                         src="/logos/skills/blackrock.svg" 
                         alt="BlackRock" 
-                        width={120} 
-                        height={30} 
-                        className="object-contain"
+                        width={100} 
+                        height={25} 
+                        className="sm:w-28 sm:h-7 md:w-30 md:h-8 object-contain"
                       />
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-deep-sea-blue-50 mb-1 font-heading">{tPortfolio('workExperience.blackrock1.title')}</h3>
-                      <p className="text-lg text-accent-purple font-semibold">{tPortfolio('workExperience.blackrock1.company')}</p>
-                      <p className="text-deep-sea-blue-300">{tPortfolio('workExperience.blackrock1.location')}</p>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-deep-sea-blue-50 mb-1 font-heading break-words">{tPortfolio('workExperience.blackrock1.title')}</h3>
+                      <p className="text-sm sm:text-base md:text-lg text-accent-purple font-semibold break-words">{tPortfolio('workExperience.blackrock1.company')}</p>
+                      <p className="text-xs sm:text-sm text-deep-sea-blue-300 break-words">{tPortfolio('workExperience.blackrock1.location')}</p>
                     </div>
                   </div>
-                  <span className="text-sm text-deep-sea-blue-400 mt-2 md:mt-0">{tPortfolio('workExperience.blackrock1.period')}</span>
+                  <span className="text-xs sm:text-sm text-deep-sea-blue-400 mt-2 md:mt-0">{tPortfolio('workExperience.blackrock1.period')}</span>
                 </div>
                 
                 <div className="space-y-4 mt-4">
-                  <div className="bg-deep-sea-blue-900/50 rounded-lg p-4 border-l-4 border-accent-purple">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-semibold text-accent-teal font-heading">{tPortfolio('workExperience.blackrock1.projects.servicenow.name')}</h4>
+                  <div className="bg-deep-sea-blue-900/50 rounded-lg p-3 sm:p-4 border-l-4 border-accent-purple">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1 sm:gap-0">
+                      <h4 className="text-sm sm:text-base font-semibold text-accent-teal font-heading break-words">{tPortfolio('workExperience.blackrock1.projects.servicenow.name')}</h4>
                       <span className="text-xs text-deep-sea-blue-400">{tPortfolio('workExperience.blackrock1.projects.servicenow.period')}</span>
                     </div>
-                    <p className="text-sm text-deep-sea-blue-200 leading-relaxed mb-3">{tPortfolio('workExperience.blackrock1.projects.servicenow.description')}</p>
+                    <p className="text-xs sm:text-sm text-deep-sea-blue-200 leading-relaxed mb-2 sm:mb-3 break-words">{tPortfolio('workExperience.blackrock1.projects.servicenow.description')}</p>
                     <div className="flex flex-wrap gap-2">
                       <SkillLogo skill="ServiceNow" size={32} />
                       <SkillLogo skill="JIRA" size={32} />
@@ -344,28 +344,28 @@ export default function PortfolioPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="bg-deep-sea-blue-800/50 rounded-lg p-6 border border-deep-sea-blue-600/30"
+                className="bg-deep-sea-blue-800/50 rounded-lg p-4 sm:p-6 border border-deep-sea-blue-600/30"
               >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-3">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 sm:mb-4">
+                  <div className="flex items-start gap-2 sm:gap-3">
                     <div className="flex-shrink-0 mt-1">
                       <Image 
                         src="/logos/skills/blackrock.svg" 
                         alt="BlackRock" 
-                        width={120} 
-                        height={30} 
-                        className="object-contain"
+                        width={100} 
+                        height={25} 
+                        className="sm:w-28 sm:h-7 md:w-30 md:h-8 object-contain"
                       />
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-deep-sea-blue-50 mb-1 font-heading">{tPortfolio('workExperience.blackrock2.title')}</h3>
-                      <p className="text-lg text-accent-purple font-semibold">{tPortfolio('workExperience.blackrock2.company')}</p>
-                      <p className="text-deep-sea-blue-300">{tPortfolio('workExperience.blackrock2.location')}</p>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-deep-sea-blue-50 mb-1 font-heading break-words">{tPortfolio('workExperience.blackrock2.title')}</h3>
+                      <p className="text-sm sm:text-base md:text-lg text-accent-purple font-semibold break-words">{tPortfolio('workExperience.blackrock2.company')}</p>
+                      <p className="text-xs sm:text-sm text-deep-sea-blue-300 break-words">{tPortfolio('workExperience.blackrock2.location')}</p>
                     </div>
                   </div>
-                  <span className="text-sm text-deep-sea-blue-400 mt-2 md:mt-0">{tPortfolio('workExperience.blackrock2.period')}</span>
+                  <span className="text-xs sm:text-sm text-deep-sea-blue-400 mt-2 md:mt-0">{tPortfolio('workExperience.blackrock2.period')}</span>
                 </div>
-                <p className="text-deep-sea-blue-200 leading-relaxed mb-3">{tPortfolio('workExperience.blackrock2.description')}</p>
+                <p className="text-xs sm:text-sm text-deep-sea-blue-200 leading-relaxed mb-2 sm:mb-3 break-words">{tPortfolio('workExperience.blackrock2.description')}</p>
                 <div className="flex flex-wrap gap-2">
                   <SkillLogo skill="ServiceNow" size={32} />
                 </div>
@@ -382,9 +382,9 @@ export default function PortfolioPage() {
 
         {/* Projects Section */}
         <motion.div variants={fadeInUp}>
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-deep-sea-blue-400/30">
-            <h2 className="text-3xl font-bold mb-6 text-deep-sea-blue-50 flex items-center font-heading">
-              <span className="mr-3 text-4xl">⚡</span>
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 md:p-8 border border-deep-sea-blue-400/30">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-deep-sea-blue-50 flex items-center font-heading">
+              <SectionImage sectionId="projects" size={32} className="sm:w-10 sm:h-10 mr-2 sm:mr-3 flex-shrink-0" />
               {tPortfolio('notableProjects')}
             </h2>
             <div className="space-y-6">
@@ -392,15 +392,15 @@ export default function PortfolioPage() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1 }}
-                className="bg-gradient-to-br from-deep-sea-blue-800/60 to-deep-sea-blue-900/60 rounded-lg p-6 border border-deep-sea-blue-600/30 hover:border-accent-teal/50 transition-all"
+                className="bg-gradient-to-br from-deep-sea-blue-800/60 to-deep-sea-blue-900/60 rounded-lg p-4 sm:p-6 border border-deep-sea-blue-600/30 hover:border-accent-teal/50 transition-all"
               >
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-bold text-deep-sea-blue-50 font-heading">{tPortfolio('projects.businessImpact.name')}</h3>
-                  <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent-orange/20 text-accent-orange border border-accent-orange/30">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 sm:mb-3 gap-2">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-deep-sea-blue-50 font-heading break-words">{tPortfolio('projects.businessImpact.name')}</h3>
+                  <span className="px-2 sm:px-3 py-1 rounded-full text-xs font-medium bg-accent-orange/20 text-accent-orange border border-accent-orange/30 whitespace-nowrap">
                     {tPortfolio('projects.businessImpact.status')}
                   </span>
                 </div>
-                <p className="text-deep-sea-blue-200 leading-relaxed mb-3">{tPortfolio('projects.businessImpact.description')}</p>
+                <p className="text-xs sm:text-sm text-deep-sea-blue-200 leading-relaxed mb-2 sm:mb-3 break-words">{tPortfolio('projects.businessImpact.description')}</p>
                 <div className="flex flex-wrap gap-2 mb-3">
                   <SkillLogo skill="Python" size={32} />
                   <SkillLogo skill="CrewAI" size={32} />
@@ -460,16 +460,16 @@ export default function PortfolioPage() {
                   </span>
                 </div>
                 <p className="text-deep-sea-blue-200 leading-relaxed mb-3">{tPortfolio('projects.directoryChallenge.description')}</p>
-                <div className="flex items-center gap-4 mb-3">
+                <div className="flex items-center gap-2 sm:gap-4 mb-2 sm:mb-3">
                   <Image 
                     src="/logos/skills/tryhackme.svg" 
                     alt="TryHackMe" 
-                    width={120} 
-                    height={40} 
-                    className="object-contain"
+                    width={100} 
+                    height={35} 
+                    className="sm:w-28 sm:h-10 md:w-30 md:h-10 object-contain"
                   />
                 </div>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4">
                   <a 
                     href={tPortfolio('projects.directoryChallenge.github')}
                     target="_blank"

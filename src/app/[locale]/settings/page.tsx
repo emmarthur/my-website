@@ -68,36 +68,36 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-20">
       <motion.div
         initial="initial"
         animate="animate"
         variants={fadeInUp}
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-deep-sea-blue-100 to-accent-teal bg-clip-text text-transparent font-heading">{t('title')}</h1>
-        <p className="text-xl text-deep-sea-blue-50 mb-12">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-deep-sea-blue-100 to-accent-teal bg-clip-text text-transparent font-heading">{t('title')}</h1>
+        <p className="text-base sm:text-lg md:text-xl text-deep-sea-blue-50 mb-8 sm:mb-12">
           {t('description')}
         </p>
         
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {/* Timezone Option */}
           <Link href="/settings/timezone">
             <motion.div
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-deep-sea-blue-400/30 hover:border-accent-teal/50 transition-all cursor-pointer"
+              className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-deep-sea-blue-400/30 hover:border-accent-teal/50 transition-all cursor-pointer"
             >
               <div className="flex items-center justify-between">
-                <div className="flex-1">
-                  <h2 className="text-2xl font-bold mb-2 text-deep-sea-blue-50 font-heading">{t('timezone.title')}</h2>
-                  <p className="text-deep-sea-blue-200 mb-2">{t('timezone.description')}</p>
+                <div className="flex-1 min-w-0">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 text-deep-sea-blue-50 font-heading break-words">{t('timezone.title')}</h2>
+                  <p className="text-sm sm:text-base text-deep-sea-blue-200 mb-1 sm:mb-2 break-words">{t('timezone.description')}</p>
                   {currentTimezone && (
-                    <p className="text-sm text-deep-sea-blue-300">
+                    <p className="text-xs sm:text-sm text-deep-sea-blue-300 break-words">
                       <strong className="text-accent-teal">{t('timezone.current')}:</strong> {getTimezoneLabel(currentTimezone)}
                     </p>
                   )}
                 </div>
-                <svg className="w-6 h-6 text-deep-sea-blue-400 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-deep-sea-blue-400 ml-2 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
@@ -109,14 +109,14 @@ export default function SettingsPage() {
             <motion.div
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-deep-sea-blue-400/30 hover:border-accent-teal/50 transition-all cursor-pointer"
+              className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-deep-sea-blue-400/30 hover:border-accent-teal/50 transition-all cursor-pointer"
             >
               <div className="flex items-center justify-between">
-                <div className="flex-1">
-                  <h2 className="text-2xl font-bold mb-2 text-deep-sea-blue-50 font-heading">{t('fonts.title')}</h2>
-                  <p className="text-deep-sea-blue-200 mb-2">{t('fonts.description')}</p>
+                <div className="flex-1 min-w-0">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 text-deep-sea-blue-50 font-heading break-words">{t('fonts.title')}</h2>
+                  <p className="text-sm sm:text-base text-deep-sea-blue-200 mb-1 sm:mb-2 break-words">{t('fonts.description')}</p>
                 </div>
-                <svg className="w-6 h-6 text-deep-sea-blue-400 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-deep-sea-blue-400 ml-2 sm:ml-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>

@@ -49,7 +49,7 @@ export default function Home() {
       {/* Background is now handled in layout.tsx */}
       
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 relative z-10">
+      <section className="container mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-20 relative z-10">
         <motion.div
           initial="initial"
           animate="animate"
@@ -58,7 +58,7 @@ export default function Home() {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl md:text-7xl font-bold mb-6 relative z-20 font-heading"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 relative z-20 font-heading px-2"
             style={{ 
               background: 'linear-gradient(to right, #b3d9ff, #1abc9c, #9b59b6)',
               WebkitBackgroundClip: 'text',
@@ -71,7 +71,7 @@ export default function Home() {
           </motion.h1>
           <motion.p
             variants={fadeInUp}
-            className="text-xl md:text-2xl text-deep-sea-blue-50 mb-12 drop-shadow-md relative z-20"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl text-deep-sea-blue-50 mb-8 sm:mb-12 drop-shadow-md relative z-20 px-2"
           >
             {t('subtitle')}
           </motion.p>
@@ -82,7 +82,7 @@ export default function Home() {
           initial="initial"
           animate="animate"
           variants={staggerContainer}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 relative z-20"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-12 md:mt-16 relative z-20"
         >
           {lifeSectionIds.map((section) => (
             <motion.div
@@ -92,12 +92,12 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
             >
               <Link href={section.path}>
-                <div className="bg-white/90 dark:bg-deep-sea-blue-900/90 backdrop-blur-md rounded-xl p-6 shadow-2xl hover:shadow-deep-sea-blue-500/50 transition-all cursor-pointer border border-deep-sea-blue-300/30 dark:border-deep-sea-blue-600/30 hover:border-accent-teal/50">
-                  <div className="flex items-start gap-4">
-                    <SectionImage sectionId={section.id} size={64} className="flex-shrink-0" />
-                    <div className="flex-1">
-                      <h2 className="text-2xl font-semibold mb-2 text-deep-sea-blue-900 dark:text-deep-sea-blue-50 font-heading">{getSectionTitle(section.id)}</h2>
-                      <p className="text-deep-sea-blue-700 dark:text-deep-sea-blue-200">{getSectionDescription(section.id)}</p>
+                <div className="bg-white/90 dark:bg-deep-sea-blue-900/90 backdrop-blur-md rounded-xl p-4 sm:p-6 shadow-2xl hover:shadow-deep-sea-blue-500/50 transition-all cursor-pointer border border-deep-sea-blue-300/30 dark:border-deep-sea-blue-600/30 hover:border-accent-teal/50">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <SectionImage sectionId={section.id} size={48} className="sm:w-16 sm:h-16 flex-shrink-0" />
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 sm:mb-2 text-deep-sea-blue-900 dark:text-deep-sea-blue-50 font-heading break-words">{getSectionTitle(section.id)}</h2>
+                      <p className="text-sm sm:text-base text-deep-sea-blue-700 dark:text-deep-sea-blue-200 break-words">{getSectionDescription(section.id)}</p>
                     </div>
                   </div>
                 </div>
