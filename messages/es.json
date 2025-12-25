@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "career": "Carrera",
+    "hobbies": "Pasatiempos",
+    "relationships": "Relaciones",
+    "thoughts": "Pensamientos",
+    "media": "Medios",
+    "settings": "Configuración"
+  },
+  "home": {
+    "title": "Bienvenido a Mi Diario Digital",
+    "subtitle": "Un viaje a través de la vida, el trabajo, la creatividad y todo lo demás"
+  },
+  "career": {
+    "title": "Carrera",
+    "description": "Mi trayectoria profesional, proyectos y logros",
+    "portfolio": "Portafolio",
+    "portfolioDescription": "Un resumen completo de mi trayectoria profesional, educación y experiencia laboral",
+    "education": "Educación",
+    "educationDescription": "Mi trayectoria académica, títulos y experiencias de aprendizaje",
+    "work": "Trabajo",
+    "workDescription": "Experiencia profesional, proyectos y logros",
+    "projects": "Proyectos",
+    "projectsDescription": "Proyectos destacados que he completado o en los que estoy trabajando actualmente",
+    "portfolioSection": {
+      "summary": {
+        "title": "Resumen Profesional"
+      },
+      "professionalSummary": "Estudiante de maestría en la Universidad Estatal de Portland en Ciencias de la Computación con áreas de enfoque en Ciberseguridad, IA e Ingeniería de Software. Con experiencia en automatización/desarrollo en Python y desarrollo de software ServiceNow, entregando impacto medible a través de sistemas inteligentes, seguros y escalables.",
+      "skills": "Habilidades y Experiencia",
+      "programmingLanguages": "Lenguajes de Programación",
+      "cloudDevOps": "Cloud y DevOps",
+      "aiTools": "Herramientas de IA y Desarrollo",
+      "databases": "Bases de Datos",
+      "developmentTools": "Herramientas de Desarrollo",
+      "education": "Educación",
+      "professionalExperience": "Experiencia Profesional",
+      "notableProjects": "Proyectos Destacados",
+      "inProgress": "En Progreso",
+      "completed": "Completado",
+      "viewOnGitHub": "Ver en GitHub",
+      "educationData": {
+        "masters": {
+          "degree": "Maestría en Ciencias - Ciencias de la Computación",
+          "school": "Universidad Estatal de Portland",
+          "location": "Portland, OR",
+          "period": "2025-2027",
+          "status": "En Progreso"
+        },
+        "bachelors": {
+          "degree": "Licenciatura en Artes - Ciencias de la Computación",
+          "school": "Reed College",
+          "location": "Portland, OR",
+          "period": "2018-2022",
+          "status": "Completado"
+        }
+      },
+      "workExperience": {
+        "blackrock1": {
+          "title": "Analista, Ingeniería Aladdin, Observabilidad",
+          "company": "Blackrock",
+          "location": "Wilmington, DE",
+          "period": "Mayo 2024 - Julio 2025",
+          "projects": {
+            "servicenow": {
+              "name": "Inventario de IA ServiceNow",
+              "period": "Enero 2025 - Marzo 2025",
+              "description": "Colaboré con equipos de cumplimiento e IA para diseñar un sistema de inventario de IA basado en ServiceNow con modelos de datos personalizados y automatización de importación. Utilicé tableros Agile para gestionar tareas, probé scripts de cliente/Políticas de UI y desplegué iterativamente en sincronización con flujos de trabajo SDLC de ServiceNow. Resultado: Ahora todos los datos de inventario para aplicaciones comerciales de IA dentro de la empresa se almacenan y gestionan dentro de este sistema."
+            },
+            "cpadmin": {
+              "name": "Mejora de Página CPAdmin",
+              "period": "Septiembre 2024 - Diciembre 2024",
+              "description": "Trabajé de manera interfuncional con equipos de plataforma y frontend para rediseñar CPAdmin usando JSBootstrap y Java; habilitó ediciones de configuración para asignaciones de Kubernetes en aplicaciones Aladdin. Integré pruebas unitarias en lógica frontend y backend. Resultado: Habilitó a todos los desarrolladores de la empresa para configurar datos para ejecutar aplicaciones y scripts en servidores desplegados en Kubernetes."
+            },
+            "filenameEncoder": {
+              "name": "Aplicación Codificador de Nombres de Archivo",
+              "period": "Agosto 2024 - Septiembre 2024",
+              "description": "Co-desarrollé una herramienta Python de nivel de producción con ingenieros de Mercados Privados para codificar nombres de archivo en URL para transferencias de archivos internas seguras; seguí sprints Agile, escribí pruebas unitarias y desplegué mediante pipelines CI/CD. Resultado: Permitió a los miembros del equipo de mercados privados acceder fácilmente a datos de mercado sin el cuello de botella de formatos de nombres de archivo incorrectos."
+            },
+            "cusip": {
+              "name": "Recuperador de Fondos CUSIP",
+              "period": "Junio 2024 - Agosto 2024",
+              "description": "Construí una herramienta de informes Python + SQL durante la incorporación para recuperar datos de fondos CUSIP y distribuir automáticamente informes por correo electrónico. Colaboré con mentores para retroalimentación, apliqué pruebas unitarias a nivel de script."
+            }
+          }
+        },
+        "blackrock2": {
+          "title": "Analista, Soporte Tecnológico",
+          "company": "Blackrock",
+          "location": "Wilmington, DE",
+          "period": "Mayo 2023 - Abril 2024",
+          "description": "Realicé solución de problemas para varios problemas de software y hardware en equipos internos para una mejor experiencia de usuario para todos los empleados de la empresa. Proporcioné pruebas de SO y soporte al usuario para más de 2,000 empleados."
+        }
+      },
+      "projects": {
+        "businessImpact": {
+          "name": "Simulador de Impacto Empresarial",
+          "status": "En Progreso",
+          "description": "Construyendo una aplicación impulsada por IA que primero clasifica un proyecto en el área(s) de la industria apropiada(s) basándose en sus descripciones, documentos y documentos, luego usa herramientas analíticas y basadas en inteligencia para generar narrativas tanto textuales como gráficas del impacto del proyecto en empresas reales o hipotéticas, incluyendo efectos a largo plazo y a nivel de industria.",
+          "github": "https://github.com/emmarthur/BusinessImpactSimulator"
+        },
+        "retailImpact": {
+          "name": "Simulador de Impacto Minorista - Aplicación Basada en la Nube",
+          "status": "Completado: Diciembre 2025",
+          "description": "Desarrollé una aplicación nativa de la nube escalable desplegada en Google Cloud Run usando arquitectura de microservicios con containerización Docker e integraciones de API REST. Construí servidor backend con principios de diseño API-first que coordina agentes de análisis especializados que recopilan datos de múltiples APIs externas.",
+          "github": "https://github.com/emmarthur/cloud-arthur-emmanart/tree/main/final"
+        },
+        "directoryChallenge": {
+          "name": "Desafío Directory Try Hack Me",
+          "status": "Completado",
+          "description": "Completé exitosamente un desafío de ciberseguridad enfocado en vulnerabilidades de directory traversal y seguridad de aplicaciones web. Demostré competencia en identificar y explotar vulnerabilidades de path traversal, entender configuraciones de servidores web, e implementar prácticas de codificación segura. Este proyecto muestra experiencia práctica con metodologías de pruebas de penetración y técnicas de evaluación de seguridad.",
+          "github": "https://github.com/emmarthur/introsec-f25-emmanart/tree/main/final",
+          "tryhackme": "https://tryhackme.com/room/directorydfirroom",
+          "viewOnTryHackMe": "Ver en TryHackMe"
+        }
+      }
+    }
+  },
+  "hobbies": {
+    "title": "Pasatiempos",
+    "description": "Actividades creativas e intereses personales"
+  },
+  "relationships": {
+    "title": "Relaciones",
+    "description": "Conexiones, experiencias y recuerdos"
+  },
+  "thoughts": {
+    "title": "Pensamientos y Reflexiones",
+    "description": "Lecciones de vida, reflexiones y pensamientos filosóficos"
+  },
+  "media": {
+    "title": "Medios",
+    "description": "Videos, fotos y contenido creativo"
+  },
+  "common": {
+    "back": "Atrás",
+    "explore": "Explorar",
+    "comingSoon": "Contenido próximamente...",
+    "viewDetails": "Ver detalles",
+    "learnMore": "Saber más"
+  },
+  "settings": {
+    "title": "Configuración",
+    "description": "Personaliza tu experiencia y preferencias",
+    "timezone": {
+      "title": "Configuración de Zona Horaria",
+      "description": "Selecciona tu zona horaria preferida para mostrar la fecha y hora correctamente",
+      "current": "Zona Horaria Actual"
+    }
+  }
+}
+
