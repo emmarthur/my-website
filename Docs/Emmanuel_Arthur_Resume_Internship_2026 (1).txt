@@ -1,0 +1,44 @@
+EMMANUEL ARTHUR
+emmakarthur1800@gmail.com github.com/emmarthur
+(503) 995-5621 Portland, OR
+SUMMARY
+Master’s student at Portland State University in Computer Science with focus areas in Cybersecurity, AI,
+Software Engineering, seeking a Summer 2026 internship to apply my education and my background in
+Python automation/development or ServiceNow software development, and to expand my expertise in
+Cybersecurity, AI and Software Engineering while delivering measurable impact through intelligent, secure,
+and scalable systems.
+EDUCATION
+Portland State University - Master of Science - Computer Science Portland, OR 2025-2027
+Reed College - Bachelor’s of Arts - Computer Science Portland, OR 2018-2022
+PROJECTS
+Business Impact Simulator application Ongoing, multi-phase project
+● Building an AI-powered application that first classifies a project into the appropriate industry area(s) based
+on its descriptions, papers, and documents, then uses analytical and intelligence-based tools to generate
+both textual and graphical narratives of the project’s impact on real or hypothetical companies, including
+long-term, industry-level effects. The current version of this project is available on GitHub under the name
+“Business Impact Simulator.”
+Business Impact Simulator application (Retail) Expected completion: December 2025
+● Will soon build a small subset of the larger business impact simulator project as a final MVP project for my
+ongoing Internet, Web and Cloud systems class. This will focus on projects in the field of retail and use
+various backend APIs to generate their simulated impact on a fictitious/real business entity and the field of
+retail at large in the long term.
+WORK EXPERIENCE
+BlackRock —Analyst, Aladdin Engineering & Tech Support Wilmington, DE May 2023 - July 2025
+● Engineered production-grade automation and observability solutions across BlackRock’s Aladdin platform
+while supporting global teams in troubleshooting and system reliability. Delivered multiple projects which
+included a URL-encoding automation for secure file transfers, enhancements to Kubernetes configuration
+pages, and a ServiceNow AI inventory system for tracking machine-learning use cases. The projects used
+Agile methodologies, Python, Java, and JavaScript tooling, integrated through Azure DevOps pipelines for
+testing and deployment. These projects were completed in collaboration with DevOps, Compliance, and
+Private Markets teams and improved workflow automation, deployment reliability, and data governance,
+while providing OS testing and user support for 2,000+ employees.
+SKILLS
+Core CS Fundamentals: Algorithms & Data Structures, Operating Systems, Networking
+Languages: Python, C/C++, Javascript, Java, Bash
+Frameworks & Libraries: Bootstrap, Python unittest
+Systems/Infrastructure: Linux, Networking, Operating Systems, Systems Administration
+Development & Automation Tools: ServiceNow, Blue Prism, JIRA, SonarQube
+Databases & Querying: MySQL, SQL
+Cloud & DevOps : Git, Azure DevOps, Kubernetes
+AI & Development Tools: GitHub Copilot, Microsoft Copilot, ChatGPT, OpenAI APIs, Claude, Prompt
+Engineering, Data Processing for Machine Learning

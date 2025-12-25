@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "career": "Carrière",
+    "hobbies": "Loisirs",
+    "relationships": "Relations",
+    "thoughts": "Réflexions",
+    "media": "Médias",
+    "settings": "Paramètres"
+  },
+  "home": {
+    "title": "Bienvenue dans Mon Journal Numérique",
+    "subtitle": "Un voyage à travers la vie, le travail, la créativité et tout le reste"
+  },
+  "career": {
+    "title": "Carrière",
+    "description": "Mon parcours professionnel, projets et réalisations",
+    "portfolio": "Portfolio",
+    "portfolioDescription": "Un résumé complet de mon parcours professionnel, de ma formation et de mon expérience professionnelle",
+    "education": "Éducation",
+    "educationDescription": "Mon parcours académique, diplômes et expériences d'apprentissage",
+    "work": "Travail",
+    "workDescription": "Expérience professionnelle, projets et réalisations",
+    "projects": "Projets",
+    "projectsDescription": "Projets remarquables que j'ai terminés ou sur lesquels je travaille actuellement",
+    "portfolioSection": {
+      "summary": {
+        "title": "Résumé Professionnel"
+      },
+      "professionalSummary": "Étudiant en maîtrise à l'Université d'État de Portland en Informatique avec des domaines d'intérêt en Cybersécurité, IA et Génie Logiciel. Expérimenté en automatisation/développement Python et développement logiciel ServiceNow, offrant un impact mesurable grâce à des systèmes intelligents, sécurisés et évolutifs.",
+      "skills": "Compétences et Expertise",
+      "programmingLanguages": "Langages de Programmation",
+      "cloudDevOps": "Cloud et DevOps",
+      "aiTools": "Outils d'IA et de Développement",
+      "databases": "Bases de Données",
+      "developmentTools": "Outils de Développement",
+      "education": "Éducation",
+      "professionalExperience": "Expérience Professionnelle",
+      "notableProjects": "Projets Notables",
+      "inProgress": "En Cours",
+      "completed": "Terminé",
+      "viewOnGitHub": "Voir sur GitHub",
+      "educationData": {
+        "masters": {
+          "degree": "Master de Sciences - Informatique",
+          "school": "Université d'État de Portland",
+          "location": "Portland, OR",
+          "period": "2025-2027",
+          "status": "En Cours"
+        },
+        "bachelors": {
+          "degree": "Licence en Arts - Informatique",
+          "school": "Reed College",
+          "location": "Portland, OR",
+          "period": "2018-2022",
+          "status": "Terminé"
+        }
+      },
+      "workExperience": {
+        "blackrock1": {
+          "title": "Analyste, Ingénierie Aladdin, Observabilité",
+          "company": "Blackrock",
+          "location": "Wilmington, DE",
+          "period": "Mai 2024 - Juillet 2025",
+          "projects": {
+            "servicenow": {
+              "name": "Inventaire IA ServiceNow",
+              "period": "Janvier 2025 - Mars 2025",
+              "description": "Partenariat avec les équipes de conformité et d'IA pour concevoir un système d'inventaire IA basé sur ServiceNow avec des modèles de données personnalisés et une automatisation d'importation. Utilisation de tableaux Agile pour gérer les tâches, test de scripts clients/Politiques UI, et déploiement itératif en synchronisation avec les flux de travail SDLC ServiceNow. Résultat : Tous les inventaires de données pour les applications commerciales IA au sein de l'entreprise sont maintenant stockés et gérés dans ce système."
+            },
+            "cpadmin": {
+              "name": "Amélioration de la Page CPAdmin",
+              "period": "Septembre 2024 - Décembre 2024",
+              "description": "Travail inter-fonctionnel avec les équipes plateforme et frontend pour reconcevoir CPAdmin en utilisant JSBootstrap et Java ; activation des modifications de configuration pour les affectations Kubernetes dans les applications Aladdin. Intégration de tests unitaires dans la logique frontend et backend. Résultat : Permis à tous les développeurs de l'entreprise de configurer les données pour exécuter des applications et scripts sur des serveurs déployés sur Kubernetes."
+            },
+            "filenameEncoder": {
+              "name": "Application Encodeur de Noms de Fichiers",
+              "period": "Août 2024 - Septembre 2024",
+              "description": "Co-développement d'un outil Python de niveau production avec les ingénieurs Private Markets pour encoder les noms de fichiers en URL pour des transferts de fichiers internes sécurisés ; suivi de sprints Agile, écriture de tests unitaires, et déploiement via pipelines CI/CD. Résultat : Permis aux membres de l'équipe Private Markets d'accéder facilement aux données de marché sans le goulot d'étranglement des formats de noms de fichiers incorrects."
+            },
+            "cusip": {
+              "name": "Récupérateur de Fonds CUSIP",
+              "period": "Juin 2024 - Août 2024",
+              "description": "Construction d'un outil de reporting Python + SQL pendant l'intégration pour récupérer les données de fonds CUSIP et distribuer automatiquement les rapports par email. Collaboration avec des mentors pour des retours, application de tests unitaires au niveau script."
+            }
+          }
+        },
+        "blackrock2": {
+          "title": "Analyste, Support Technologique",
+          "company": "Blackrock",
+          "location": "Wilmington, DE",
+          "period": "Mai 2023 - Avril 2024",
+          "description": "Résolution de problèmes pour divers problèmes logiciels et matériels dans les équipes internes pour une meilleure expérience utilisateur pour tous les employés de l'entreprise. Fourni des tests OS et un support utilisateur pour plus de 2 000 employés."
+        }
+      },
+      "projects": {
+        "businessImpact": {
+          "name": "Simulateur d'Impact Commercial",
+          "status": "En Cours",
+          "description": "Construction d'une application alimentée par l'IA qui classe d'abord un projet dans le(s) domaine(s) industriel(s) approprié(s) basé sur ses descriptions, articles et documents, puis utilise des outils analytiques et basés sur l'intelligence pour générer des récits textuels et graphiques de l'impact du projet sur des entreprises réelles ou hypothétiques, incluant des effets à long terme au niveau de l'industrie.",
+          "github": "https://github.com/emmarthur/BusinessImpactSimulator"
+        },
+        "retailImpact": {
+          "name": "Simulateur d'Impact de Détail - Application Cloud",
+          "status": "Terminé : Décembre 2025",
+          "description": "Développement d'une application cloud-native scalable déployée sur Google Cloud Run utilisant une architecture de microservices avec containerisation Docker et intégrations d'API REST. Construction d'un serveur backend avec des principes de conception API-first qui coordonne des agents d'analyse spécialisés collectant des données de plusieurs API externes.",
+          "github": "https://github.com/emmarthur/cloud-arthur-emmanart/tree/main/final"
+        },
+        "directoryChallenge": {
+          "name": "Défi Directory Try Hack Me",
+          "status": "Terminé",
+          "description": "Réussi un défi de cybersécurité axé sur les vulnérabilités de directory traversal et la sécurité des applications web. Démontré la compétence dans l'identification et l'exploitation des vulnérabilités de path traversal, la compréhension des configurations de serveurs web, et l'implémentation de pratiques de codage sécurisées. Ce projet montre une expérience pratique avec les méthodologies de tests de pénétration et les techniques d'évaluation de sécurité.",
+          "github": "https://github.com/emmarthur/introsec-f25-emmanart/tree/main/final",
+          "tryhackme": "https://tryhackme.com/room/directorydfirroom",
+          "viewOnTryHackMe": "Voir sur TryHackMe"
+        }
+      }
+    }
+  },
+  "hobbies": {
+    "title": "Loisirs",
+    "description": "Poursuites créatives et intérêts personnels"
+  },
+  "relationships": {
+    "title": "Relations",
+    "description": "Connexions, expériences et souvenirs"
+  },
+  "thoughts": {
+    "title": "Réflexions",
+    "description": "Leçons de vie, réflexions et pensées philosophiques"
+  },
+  "media": {
+    "title": "Médias",
+    "description": "Vidéos, photos et contenu créatif"
+  },
+  "common": {
+    "back": "Retour",
+    "explore": "Explorer",
+    "comingSoon": "Contenu à venir...",
+    "viewDetails": "Voir les détails",
+    "learnMore": "En savoir plus"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "description": "Personnalisez votre expérience et vos préférences",
+    "timezone": {
+      "title": "Paramètres de Fuseau Horaire",
+      "description": "Sélectionnez votre fuseau horaire préféré pour afficher correctement la date et l'heure",
+      "current": "Fuseau Horaire Actuel"
+    }
+  }
+}

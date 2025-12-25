@@ -1,0 +1,50 @@
+EMMANUEL ARTHUR
+emmakarthur1800@gmail.com github.com/emmarthur (503) 995-5621
+SKILLS
+Core CS Fundamentals: Algorithms & Data Structures, Operating Systems, Networking
+Languages: Python, C/C++, Javascript, Java, Bash
+Frameworks & Libraries: Bootstrap, Python unittest
+Systems/Infrastructure: Linux, Networking, Operating Systems, Systems Administration
+Development & Automation Tools: ServiceNow, Blue Prism, JIRA, SonarQube
+Databases & Querying: MySQL, SQL
+Cloud & DevOps : Git, Azure DevOps, Kubernetes, Docker
+AI & Development Tools: GitHub Copilot, Microsoft Copilot, ChatGPT, OpenAI APIs, Claude, Prompt
+Engineering, Data Processing for Machine Learning
+EDUCATION
+Portland State University - Master of Science - Computer Science Portland, OR 2025-2027
+Reed College - Bachelor’s of Arts - Computer Science Portland, OR 2018-2022
+EXPERIENCE
+Blackrock- Analyst, Aladdin Engineering, Observability Wilmington, DE May 2024 - July 2025
+● ServiceNow AI Inventory (January 2025 - March 2025): Partnered with compliance and AI teams to
+architect a ServiceNow-based AI inventory system with custom data models and import automation.
+Leveraged Agile boards to manage tasks, tested client scripts/UI Policies, and deployed iteratively in sync
+with ServiceNow SDLC workflows. Now all data inventory for AI business applications within the company
+are stored and managed within this system
+● Filename Encoder App (August 2024-September 2024): Co-developed a production-grade Python tool
+with Private Markets engineers to URL-encode filenames for secure internal file transfers; followed Agile
+sprints, wrote unit tests, and deployed via CI/CD pipelines. This allowed private markets team members to
+easily access market data without the bottleneck of incorrect filename formats.
+● CPAdmin Page Enhancement (September 2024-December 2024): Worked cross-functionally with
+platform and frontend teams to redesign CPAdmin using JSBootstrap and Java; enabled configuration
+edits for Kubernetes assignments in Aladdin apps. Integrated unit tests across frontend and backend
+logic, aligning with SDLC checkpoints in Agile sprints. This enabled all developers throughout the company
+to configure data for running applications and scripts on servers deployed on Kubernetes.
+● CUSIP Fund Retriever (June 2024-August 2024): Built a Python + SQL reporting tool during onboarding
+to retrieve CUSIP fund data and auto-distribute reports via email. Collaborated with mentors for feedback,
+applied script-level unit testing, and completed the full SDLC cycle from requirement to deployment in a
+Aladdin Developer training environment.
+Blackrock- Analyst, Technology Support (May 2023-May 2024) Wilmington, DE May 2023 - April 2024
+● Performed troubleshooting for various software and hardware issues across internal teams for better user
+experience for all employees in the firm
+PROJECTS
+Business Impact Simulator application Ongoing, multi-phase project
+● Building an AI-powered application that first classifies a project into the appropriate industry area(s) based
+on its descriptions, papers, and documents, then uses analytical and intelligence-based tools to generate
+both textual and graphical narratives of the project’s impact on real or hypothetical companies, including
+long-term, industry-level effects. The current version of this project is available on GitHub under the name
+“Business Impact Simulator.”
+Business Impact Simulator application (Retail) Expected completion: December 2025
+● Will soon build a small subset of the larger business impact simulator project as a final MVP project for my
+ongoing Internet, Web and Cloud systems class. This will focus on projects in the field of retail and use
+various backend APIs to generate their simulated impact on a fictitious/real business entity and the field of
+retail at large in the long term.

@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "career": "المسيرة المهنية",
+    "hobbies": "الهوايات",
+    "relationships": "العلاقات",
+    "thoughts": "الأفكار",
+    "media": "الوسائط",
+    "settings": "الإعدادات"
+  },
+  "home": {
+    "title": "مرحباً بك في مذكرتي الرقمية",
+    "subtitle": "رحلة عبر الحياة والعمل والإبداع وكل شيء بينهما"
+  },
+  "career": {
+    "title": "المسيرة المهنية",
+    "description": "رحلتي المهنية والمشاريع والإنجازات",
+    "portfolio": "المحفظة",
+    "portfolioDescription": "ملخص شامل لرحلتي المهنية والتعليم والخبرة العملية",
+    "education": "التعليم",
+    "educationDescription": "رحلتي الأكاديمية والشهادات وتجارب التعلم",
+    "work": "العمل",
+    "workDescription": "الخبرة المهنية والمشاريع والإنجازات",
+    "projects": "المشاريع",
+    "projectsDescription": "مشاريع بارزة أكملتها أو أعمل عليها حالياً",
+    "portfolioSection": {
+      "summary": {
+        "title": "Professional Summary"
+      },
+      "professionalSummary": "Master's student at Portland State University in Computer Science with focus areas in Cybersecurity, AI, and Software Engineering. Experienced in Python automation/development and ServiceNow software development, delivering measurable impact through intelligent, secure, and scalable systems.",
+      "skills": "Skills & Expertise",
+      "programmingLanguages": "Programming Languages",
+      "cloudDevOps": "Cloud & DevOps",
+      "aiTools": "AI & Development Tools",
+      "databases": "Databases",
+      "developmentTools": "Development Tools",
+      "education": "Education",
+      "professionalExperience": "Professional Experience",
+      "notableProjects": "Notable Projects",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "viewOnGitHub": "View on GitHub",
+      "educationData": {
+        "masters": {
+          "degree": "Master of Science - Computer Science",
+          "school": "Portland State University",
+          "location": "Portland, OR",
+          "period": "2025-2027",
+          "status": "In Progress"
+        },
+        "bachelors": {
+          "degree": "Bachelor's of Arts - Computer Science",
+          "school": "Reed College",
+          "location": "Portland, OR",
+          "period": "2018-2022",
+          "status": "Completed"
+        }
+      },
+      "workExperience": {
+        "blackrock1": {
+          "title": "Analyst, Aladdin Engineering, Observability",
+          "company": "Blackrock",
+          "location": "Wilmington, DE",
+          "period": "May 2024 - July 2025",
+          "projects": {
+            "servicenow": {
+              "name": "ServiceNow AI Inventory",
+              "period": "January 2025 - March 2025",
+              "description": "Partnered with compliance and AI teams to architect a ServiceNow-based AI inventory system with custom data models and import automation. Leveraged Agile boards to manage tasks, tested client scripts/UI Policies, and deployed iteratively in sync with ServiceNow SDLC workflows. Result: Now all data inventory for AI business applications within the company are stored and managed within this system."
+            },
+            "cpadmin": {
+              "name": "CPAdmin Page Enhancement",
+              "period": "September 2024 - December 2024",
+              "description": "Worked cross-functionally with platform and frontend teams to redesign CPAdmin using JSBootstrap and Java; enabled configuration edits for Kubernetes assignments in Aladdin apps. Integrated unit tests across frontend and backend logic. Result: Enabled all developers throughout the company to configure data for running applications and scripts on servers deployed on Kubernetes."
+            },
+            "filenameEncoder": {
+              "name": "Filename Encoder App",
+              "period": "August 2024 - September 2024",
+              "description": "Co-developed a production-grade Python tool with Private Markets engineers to URL-encode filenames for secure internal file transfers; followed Agile sprints, wrote unit tests, and deployed via CI/CD pipelines. Result: Allowed private markets team members to easily access market data without the bottleneck of incorrect filename formats."
+            },
+            "cusip": {
+              "name": "CUSIP Fund Retriever",
+              "period": "June 2024 - August 2024",
+              "description": "Built a Python + SQL reporting tool during onboarding to retrieve CUSIP fund data and auto-distribute reports via email. Collaborated with mentors for feedback, applied script-level unit testing."
+            }
+          }
+        },
+        "blackrock2": {
+          "title": "Analyst, Technology Support",
+          "company": "Blackrock",
+          "location": "Wilmington, DE",
+          "period": "May 2023 - April 2024",
+          "description": "Performed troubleshooting for various software and hardware issues across internal teams for better user experience for all employees in the firm. Provided OS testing and user support for 2,000+ employees."
+        }
+      },
+      "projects": {
+        "businessImpact": {
+          "name": "Business Impact Simulator",
+          "status": "Ongoing",
+          "description": "Building an AI-powered application that first classifies a project into the appropriate industry area(s) based on its descriptions, papers, and documents, then uses analytical and intelligence-based tools to generate both textual and graphical narratives of the project's impact on real or hypothetical companies, including long-term, industry-level effects.",
+          "github": "https://github.com/emmarthur/BusinessImpactSimulator"
+        },
+        "retailImpact": {
+          "name": "Retail Impact Simulator - Cloud-Based Application",
+          "status": "Completed: December 2025",
+          "description": "Developed a scalable cloud-native application deployed on Google Cloud Run using microservices architecture with Docker containerization and REST API integrations. Built backend server with API-first design principles that coordinates specialized analysis agents gathering data from multiple external APIs.",
+          "github": "https://github.com/emmarthur/cloud-arthur-emmanart/tree/main/final"
+        },
+        "directoryChallenge": {
+          "name": "Directory Try Hack Me Challenge",
+          "status": "Completed",
+          "description": "Successfully completed a cybersecurity challenge focused on directory traversal vulnerabilities and web application security. Demonstrated proficiency in identifying and exploiting path traversal vulnerabilities, understanding web server configurations, and implementing secure coding practices. This project showcases hands-on experience with penetration testing methodologies and security assessment techniques.",
+          "github": "https://github.com/emmarthur/introsec-f25-emmanart/tree/main/final",
+          "tryhackme": "https://tryhackme.com/room/directorydfirroom",
+          "viewOnTryHackMe": "View on TryHackMe"
+        }
+      }
+    }
+  },
+  "hobbies": {
+    "title": "الهوايات",
+    "description": "الأنشطة الإبداعية والاهتمامات الشخصية"
+  },
+  "relationships": {
+    "title": "العلاقات",
+    "description": "الصلات والتجارب والذكريات"
+  },
+  "thoughts": {
+    "title": "الأفكار والتفكير",
+    "description": "دروس الحياة والتأملات والأفكار الفلسفية"
+  },
+  "media": {
+    "title": "الوسائط",
+    "description": "مقاطع الفيديو والصور والمحتوى الإبداعي"
+  },
+  "common": {
+    "back": "رجوع",
+    "explore": "استكشف",
+    "comingSoon": "المحتوى قريباً...",
+    "viewDetails": "عرض التفاصيل",
+    "learnMore": "معرفة المزيد"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "description": "قم بتخصيص تجربتك وتفضيلاتك",
+    "timezone": {
+      "title": "إعدادات المنطقة الزمنية",
+      "description": "اختر المنطقة الزمنية المفضلة لديك لعرض التاريخ والوقت بشكل صحيح",
+      "current": "المنطقة الزمنية الحالية"
+    }
+  }
+}
+
