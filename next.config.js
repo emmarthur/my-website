@@ -5,6 +5,9 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
+  },
   images: {
     domains: ['i.ytimg.com', 'img.youtube.com', 'cdn.simpleicons.org'],
     unoptimized: false,

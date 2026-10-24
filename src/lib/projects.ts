@@ -13,6 +13,18 @@ export interface ShowcaseProject {
 
 export const showcaseProjects: ShowcaseProject[] = [
   {
+    id: 'project-management-board',
+    title: 'Dynamic Project Management Board',
+    description:
+      'Kanban-style board from React Projects (Ch. 3): custom data-fetch hook, HTML5 drag-and-drop lanes, and styled-components—book-guided demo with local task data.',
+    technologies: ['React', 'TypeScript', 'Next.js', 'styled-components', 'HTML5 DnD'],
+    status: 'completed',
+    category: 'web',
+    github:
+      'https://github.com/PacktPublishing/React-Projects-Second-Edition/tree/main/Chapter03',
+    demoPath: '/career/projects/project-management-board',
+  },
+  {
     id: 'retail-impact-simulator',
     title: 'Retail Impact Simulator',
     description:

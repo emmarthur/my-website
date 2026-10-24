@@ -14,7 +14,8 @@ export default function ProjectsPage() {
       backLabel={`${tCommon('back')} ${t('title')}`}
       title={t('projects')}
       description={t('projectsDescription')}
-      LinkComponent={Link}
+      // next-intl Link vs next/link prop types after Next 14.2 upgrade
+      LinkComponent={Link as typeof import('next/link').default}
     />
   )
 }
