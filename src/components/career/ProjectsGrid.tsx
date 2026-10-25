@@ -122,6 +122,14 @@ export function ProjectsGrid({
                     </div>
 
                     <div className="flex flex-col gap-2">
+                      {project.demoUrl && (
+                        <a
+                          href={project.demoUrl}
+                          className="inline-flex items-center text-accent-teal hover:text-accent-teal/80 text-sm font-medium transition-colors"
+                        >
+                          Try live demo →
+                        </a>
+                      )}
                       {project.demoPath && (
                         <L
                           href={project.demoPath}
