@@ -13,7 +13,7 @@ export interface ShowcaseProject {
   image?: string
 }
 
-/** Local dev defaults (portfolio 3000; demos 3001–3009). Override via NEXT_PUBLIC_* in .env.local */
+/** Local dev defaults (portfolio 3000; demos 3001–3010). Override via NEXT_PUBLIC_* in .env.local */
 function localDemoUrl(port: number, envVar?: string): string {
   const fromEnv = envVar ? process.env[envVar] : undefined
   return fromEnv ?? `http://localhost:${port}`
@@ -118,6 +118,17 @@ export const showcaseProjects: ShowcaseProject[] = [
     category: 'web',
     github: 'https://github.com/emmarthur/markdown-editor-typescript',
     demoUrl: localDemoUrl(3009, 'NEXT_PUBLIC_MARKDOWN_EDITOR_DEMO_URL'),
+  },
+  {
+    id: 'guess-the-number',
+    title: 'Guess the Number',
+    description:
+      'Classic higher-or-lower number puzzle—seven guesses to find the secret between 1 and 100.',
+    technologies: ['Python', 'FastAPI'],
+    status: 'completed',
+    category: 'web',
+    github: 'https://github.com/emmarthur/guess-the-number',
+    demoUrl: localDemoUrl(3010, 'NEXT_PUBLIC_GUESS_THE_NUMBER_DEMO_URL'),
   },
   {
     id: 'retail-impact-simulator',
