@@ -13,7 +13,7 @@ export interface ShowcaseProject {
   image?: string
 }
 
-/** Local dev defaults (portfolio 3000; demos 3001–3011). Override via NEXT_PUBLIC_* in .env.local */
+/** Local dev defaults (portfolio 3000; demos 3001–3012). Override via NEXT_PUBLIC_* in .env.local */
 function localDemoUrl(port: number, envVar?: string): string {
   const fromEnv = envVar ? process.env[envVar] : undefined
   return fromEnv ?? `http://localhost:${port}`
@@ -140,6 +140,17 @@ export const showcaseProjects: ShowcaseProject[] = [
     category: 'cybersecurity',
     github: 'https://github.com/emmarthur/caesar-cipher',
     demoUrl: localDemoUrl(3011, 'NEXT_PUBLIC_CAESAR_CIPHER_DEMO_URL'),
+  },
+  {
+    id: 'monty-hall-problem',
+    title: 'Monty Hall Problem',
+    description:
+      'Play the three-door game or run 100,000 trials—see why switching doors wins about twice as often.',
+    technologies: ['Python', 'FastAPI', 'Server-Sent Events'],
+    status: 'completed',
+    category: 'web',
+    github: 'https://github.com/emmarthur/monty-hall-problem',
+    demoUrl: localDemoUrl(3012, 'NEXT_PUBLIC_MONTY_HALL_DEMO_URL'),
   },
   {
     id: 'retail-impact-simulator',
